@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+::placeholder {
+  color: rgb(164, 164, 164);
+}
+
+.uniform-width {
+  width: 90%;
+}
+
+.active-tab {
+  border-left: solid yellow 5px;
+  transform: translate(5px);
+}
+
+.highlight {
+  color: red;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
