@@ -17,7 +17,8 @@ function Form() {
   const [email, setEmail] = React.useState("");
   const [address, setAddress] = React.useState("");
   const [casilleroNumber, setCasilleroNumber] = React.useState("");
-
+  
+  const [showLoadingButton, setShowLoadingButton] = React.useState(false);
   const [showMessageBox, setShowMessageBox] = React.useState(false);
   const [messageBoxContent, setMessageBoxContent] = useState(null);
 
@@ -59,6 +60,8 @@ function Form() {
   function handleSubmit(e) {
     e.preventDefault();
 
+    setShowLoadingButton(true);
+
     // Makes sure user can't submit form if any field is empty
     if (
       firstName.trim() === "" ||
@@ -71,6 +74,7 @@ function Form() {
         "Por favor, rellene todos los campos del formulario."
       );
       setShowMessageBox(true);
+      setShowLoadingButton(false);
       return;
     }
 
@@ -80,6 +84,7 @@ function Form() {
         "Por favor, introduzca un correo electrónico válido."
       );
       setShowMessageBox(true);
+      setShowLoadingButton(false);
       return;
     }
 
@@ -89,6 +94,7 @@ function Form() {
         "Por favor, introduzca un número de teléfono válido de al menos 10 dígitos."
       );
       setShowMessageBox(true);
+      setShowLoadingButton(false);
       return;
     }
 
@@ -128,6 +134,7 @@ function Form() {
             `El correo electrónico introducido ya existe, póngase en contacto con nosotros para obtener su información.`
           );
           setShowMessageBox(true);
+          setShowLoadingButton(false);
 
           // If user doesn't exists then this code runs
           // ........................................................
@@ -153,13 +160,14 @@ function Form() {
           "Se ha producido un error, inténtelo de nuevo más tarde o póngase en contacto con nosotros para que podamos registrarle manualmente."
         );
         setShowMessageBox(true);
+        setShowLoadingButton(false);
       });
   }
 
   return (
     <div className="modal-container">
       <div className="leftside">
-        <img src="/personaje-de-envios.png" alt="logo" />
+        <img src="/pmt.png" alt="logo" />
       </div>
       <div className="rightside">
         <h2>Ya casi estas listo para comprar tus marcas favoritas!</h2>
@@ -279,14 +287,13 @@ function Form() {
                 readOnly={true}
               />
             </div>
-
-            <button
+            {showLoadingButton ? <p style={{textAlign: "center", marginTop: "1.5rem"}}>Enviando...</p> : <button
               type="submit"
               id="submit-butoni"
               onClick={(e) => handleSubmit(e)}
             >
               Abrir casillero
-            </button>
+            </button>}
           </form>
         </div>
       </div>
