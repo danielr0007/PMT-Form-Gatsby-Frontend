@@ -111,7 +111,7 @@ export default function Home() {
                 prepago, o una aplicación de pago como PayPal o NEQUI <br />
                 2) La dirección de tu casillero:
                 <span className="highlight">
-                  <strong> 5401 NW 102 AVE, Ste 139, Sunrise, FL, 33351</strong>
+                  <strong> 7861 Beechfern Circle, Tamarac, FL, 33321</strong>
                 </span>
                 <br />
                 3) El número de tu casillero:
