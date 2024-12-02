@@ -18,7 +18,7 @@ export default function Home() {
   const pasosData = [
     {
       number: "Paso 1",
-      info: "Ingresa al sitio web donde quieres comprar y agrega lo que quieras al carrito. Completa tu información en la página de pago y coloca la dirección del casillero proporcionada arriba como destino. Recuerda que el nombre que proporciones en el proceso de compra debe coincidir con el nombre que registraste en el casillero (sin excepciones). Si no te permite colocar el número de casillero, solo escribe tu nombre completo.",
+      info: "Ingresa al sitio web de tu elección, agrega lo que desees al carrito y completa tu información en la página de pago. Usa la dirección del casillero que te proporcionamos como destino. Es importante que el nombre que ingreses coincida exactamente con el registrado en el casillero (sin excepciones). Si no puedes añadir el número del casillero, simplemente escribe tu nombre completo.",
     },
     {
       number: "Paso 2",
@@ -26,7 +26,7 @@ export default function Home() {
     },
     {
       number: "Paso 3",
-      info: "Cuando obtengamos tu compra, recibirás un mensaje a través de WhatsApp (incluirá fotos de tus artículos). Si todo está en orden, con tu aprobación, lo despachamos. Una vez que tu compra llegue a nuestra sede en Bogotá uno de nuestros agentes te informará dónde depositar el pago del envío, y al hacerlo, el paquete será entregado. Todo este proceso Miami --> tu casa, puede tomar de 4 a 7 días hábiles.",
+      info: "Cuando recibamos tu compra, te enviaremos un mensaje por WhatsApp con fotos de tus artículos. Si todo está en orden, con tu aprobación, procederemos a despacharlos. Una vez que tu paquete llegue a nuestra sede en Bogotá, uno de nuestros agentes te indicará dónde realizar el pago del envío. Al completar el pago, tu paquete será entregado.",
     },
   ];
 
@@ -52,11 +52,7 @@ export default function Home() {
               <p>
                 Hola
                 <span className="nombre-letter"> {userInfo.firstName}</span>,
-                soy Daniel, CEO de PaMi Tierra Envíos. ¡Felicidades por la
-                adquisición de tu casillero! Con este casillero, ahora puedes
-                comprar en las tiendas online de EE. UU. como si vivieras allí.
-                Eso significa que puedes disfrutar de todos los beneficios que
-                los compradores americanos disfrutan... <br />
+                soy Daniel, CEO de PaMi Tierra Envíos. ¡Felicidades por tu nuevo casillero! Ahora puedes comprar en tiendas online de EE. UU. como si vivieras allí y disfrutar de todos los beneficios de ser un comprador americano.<br />
                 <br />
                 &#183; Productos 100% auténticos. <br />
                 &#183; Acceso a productos de edición limitada, disponibles solo
@@ -72,28 +68,19 @@ export default function Home() {
                 <br />
                 ¿Y la mejor parte? <br />
                 <br />
-                No tienes que preocuparte de nada más que comprar... nosotros
-                nos encargamos de las tasas de importación, el papeleo, la
-                recepción, el embalaje, la entrega, etc. <br />
+                Solo te enfocas en comprar. Nosotros nos encargamos de todo lo demás: tasas de importación, papeleo, recepción, embalaje y entrega directa a tu puerta. ¡Así de fácil! 🚛✨ <br />
                 <br />
-                ¡Ahora eres libre! Libre de tener que pagar en exceso, eres
-                libre de estar sometido a límites de compras y eres libre de
-                tener que hacer largas búsquedas de productos que, a menudo, se
-                convierten en una decepción.
+                ¡Ahora eres libre! Libre de pagar de más, de los molestos límites de compra y de las eternas búsquedas que terminan en decepciones. ¡Disfruta una experiencia de compra sin fronteras y sin complicaciones! 
                 <br />
                 <br />
                 Ahora, sé que puede parecer un poco intimidante comprar en otro
                 país, pero te garantizo que es seguro y sencillo
                 <br />
                 <br />
-                Tanto es así, que cientos de nuestros clientes, de diferentes
-                edades, ya lo están haciendo. Además, estamos siempre
-                disponibles para ayudarte y guiarte a través de todo el proceso
-                utilizando la red social WhatsApp.
+                De hecho, cientos de clientes de todas las edades ya están disfrutando de esta experiencia. Y no estás solo: estamos aquí para ayudarte en cada paso del proceso a través de WhatsApp
                 <br />
                 <br />
-                Echa un vistazo a los siguientes pasos para realizar tu primera
-                compra.
+                ¡Listo para empezar! Aquí tienes los pasos para realizar tu primera compra: 👇🛒
               </p>
             </section>
             {/* PASOS SECTION//////////////////////////
@@ -111,7 +98,7 @@ export default function Home() {
                 prepago, o una aplicación de pago como PayPal o NEQUI <br />
                 2) La dirección de tu casillero:
                 <span className="highlight">
-                  <strong> 7861 Beechfern Circle, Tamarac, FL, 33321</strong>
+                  <strong> 1967 NW 55 Avenue, Margate, FL, 33063</strong>
                 </span>
                 <br />
                 3) El número de tu casillero:
@@ -140,14 +127,9 @@ export default function Home() {
             <section className={`end ${formSent || "hidden"}`}>
               <div className="end-container">
                 <p>
-                  ¡Listo! Eso es todo lo que necesitas saber para hacer tu
-                  primera compra en los Estados Unidos. <br />
+                ¡Eso es todo! Ahora tienes todo lo necesario para hacer tu primera compra en los Estados Unidos. <br />
                   <br />
-                  Espero que todo te haya quedado claro, pero si aún tienes
-                  dudas, puedes enviarme tus preguntas a través de WhatsApp. Si
-                  deseas saber el costo exacto del envío de un artículo o de un
-                  grupo de artículos, envíame su peso y precio y lo calcularé
-                  por ti. <br />
+                  Espero que todo haya quedado claro. Si tienes alguna duda, no dudes en escribirme por WhatsApp. Además, si quieres saber el costo exacto de enviar un artículo o varios, solo envíame su peso y precio, ¡y lo calcularé para ti!  <br />
                   <br />
                   Síguenos en Facebook y en Instagram @pamitierraenvios para
                   obtener consejos útiles de compra. Disfruta! Hasta luego :){" "}
